@@ -6,11 +6,9 @@ const TodoList = (props) => {
   return (
     <div>
 
-      list
+      initial list
 
-      {
-        props.todos.map(el => <li>{el.name}</li>)
-      }
+
     </div>
   );
 };

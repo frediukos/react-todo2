@@ -3,15 +3,22 @@ import './App.css';
 import TodoList from "./components/TodoList";
 import TodoCreateForm from "./components/TodoCreateForm";
 
+const initialTodos = [
+  {id: 1, name: 'ToDo 1', done: false},
+  {id: 1, name: 'ToDo 1', done: false},
+  {id: 1, name: 'ToDo 1', done: false},
+];
 
 function App() {
 
-  const [todos, setTodos] = useState([{id: 1, name: 'Test', done: false}])
+  const [todos, setTodos] = useState(initialTodos);
+
 
   return (
     <div className="App">
       <TodoCreateForm/>
-      <TodoList todo={todos}/>
+      <TodoList todos={todos} />
+
     </div>
   )
 }
